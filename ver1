@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <math.h>
+#define PI 3.142
+
+int main()
+{
+    float avg, value, radius, area, add, sub, multiply, num, n, i, x, sum=0;
+    printf("choose the value\n");
+    printf("1-add \n2-substract \n3-multiply \n4-divide \n5-radius of circle \n6-area of circle \n");
+    printf("choose the function :-");
+    scanf("%f",&value);
+     if(value <= 1)
+     {
+       printf("\n enter the no of times to be added ");
+       scanf("%f", &n);
+       for (i = 0 ; i<n ; i++)
+       {
+        scanf("%f",&num);
+        sum=sum+num;
+       }
+printf("\nSum of all %f numbers = %f", n, sum);
+     }
+       else if(value <= 2)
+     {
+      printf("\n enter the no of times to be substracted ");
+       scanf("%f", &n);
+       for (i = 0 ; i<n ; i++)
+       {
+        scanf("%f",&num);
+        x=x-num;
+       }
+printf("\nSum of all %f numbers = %f", n, sum);
+     }
+      else if(value <= 3)
+     {
+       printf("\n not available right now");
+       scanf("%f", num);
+     }
+     else if(value <= 4)
+     {
+       printf("\n not available right now");
+     }
+        else if(value <= 5)
+      {
+    printf("Enter the radius of a circle \n");
+    scanf("%f", &radius);
+    area = PI * pow(radius, 2);
+    printf("Area of a circle = %5.2f\n", area);
+      }
+      else if(value <= 6)
+      {
+      printf("\n circle is not available right now");
+      scanf("%f", &num);
+      }
+      else if(value <= 7);
+      {
+          printf("error input");
+      }
+    return 0;
+}
